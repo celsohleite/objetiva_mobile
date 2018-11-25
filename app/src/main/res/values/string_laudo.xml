@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alert_title_atencao">Atençāo</string>
+    <string name="alert_title_veiculo">Veiculo</string>
+    <string name="alert_title_foto">Titulo da Foto</string>
+    <string name="alert_text_veiculo">Veiculo</string>
+    <string name="alert_title_conclusao">Conclusão</string>
+
+    <string name="alert_text_informe">Informe</string>
+    <string name="alert_text_placa">Placa</string>
+    <string name="alert_text_motor">Motor</string>
+    <string name="alert_text_chassis">Chassis</string>
+    <string name="alert_text_cambio">Cambio</string>
+
+    <string name="alert_rdb_base">Base</string>
+    <string name="alert_rdb_movel">Móvel</string>
+
+    <string name="alert_rdb_tipo_placa">Placa</string>
+    <string name="alert_rdb_tipo_motor">Motor</string>
+    <string name="alert_rdb_tipo_cambio">Cambio</string>
+    <string name="alert_rdb_tipo_chassis">Chassis</string>
+
+    <string name="alert_rdb_title_ident">Tipo Laudo</string>
+    <string name="alert_rdb_title_vistoria">Vistoria</string>
+
+    <string name="alert_btn_add">Adicionar</string>
+    <string name="alert_btn_cancel">Cancelar</string>
+
+    <string name="alert_err_identificacao">Selecione a Identifiçāo para Vistoria.</string>
+    <string name="alert_err_vistoria">Selecione o tipo de Vistoria.</string>
+    <string name="alert_err_numeracao">Caso nāo há numeraçāo sera gerado codigo automatico.</string>
+
+    <!-- sequecia das fotos -->
+    <string name="alert_foto_informacao">Siga a sequência conforme apresentado nestas informações, tire a foto do  </string>
+    <string name="alert_foto_crv_crlv"> CRV/CRLV</string>
+    <string name="alert_foto_placa"> Placa</string>
+    <string name="alert_foto_traseira"> Traseira</string>
+    <string name="alert_foto_chassis"> Chassis</string>
+    <string name="alert_foto_motor"> Motor</string>
+    <string name="alert_foto_cambio"> Cambio</string>
+    <string name="alert_foto_frente"> Frente</string>
+
+    <string name="btn_anterior">Anterior</string>
+    <string name="btn_next">Próximo</string>
+    <string name="btn_concluir">Concluir</string>
+
+
+    <string name="alert_categoria_sync">Deseja sincronizar os dados? </string>
+    <string name="alert_remover_foto">Deseja realmente remover esta foto? </string>
+    <string name="alert_categoria_inst_sync"> Sincronize os dados antes de proseguir. </string>
+    <string name="alert_categoria_not_selecinado">Não há resposta selecionada. Deseja proseguir?</string>
+    <string name="alert_btn_sim">SIM</string>
+    <string name="alert_btn_nao">NÃO</string>
+
+
+    <string name="alert_btn_aprovado">Aprovado</string>
+    <string name="alert_btn_restricao">Com restrição</string>
+    <string name="alert_btn_reprovado">Reprovado</string>
+
+    <string name="progress_title_check_list">Obtendo informaçao.</string>
+    <string name="progress_msg_checklist">Aguarde enquanto carrega as informações do Checklist...</string>
+
+    <string name="text_veiculo">Laudo : " " </string>
+    <string name="text_vistoria">Vistoria : " " </string>
+    <string name="text_localizacao">Localização :  </string>
+
+
+</resources>

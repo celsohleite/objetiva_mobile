@@ -1,0 +1,138 @@
+CREATE TABLE FOTO_LAUDO(
+  ID_CLIENTE INTEGER PRIMARY KEY AUTOINCREMENT
+, NOME_FOTO     TEXT
+, PATH          TEXT
+, FOTO_ARQUIVO  BLOB
+, DESCRICAO     TEXT
+, STATUS        TEXT
+, ID_LAUDO      INTEGER
+, COD_LAUDO     INTEGER
+, TMP_FOTO      TEXT
+, TIPO_LAUDO    TEXT
+, SYNC          TEXT
+);
+
+CREATE TABLE LAUDO_ITEM(
+    ID_LAUDO INTEGER PRIMARY KEY AUTOINCREMENT
+  , CD_LAUDO INTEGER
+  , IDENTIFICACAO TEXT
+  , IMAGEID       INTEGER
+  , VISTORIA      TEXT
+  , NUMERACAO     TEXT
+  , OBSERVACAO    TEXT
+  , LAT           TEXT
+  , LNG           TEXT
+  , STATUS        TEXT
+);
+
+CREATE TABLE CATEGORIA_LAUDO(
+    ID_CATEGORIA INTEGER PRIMARY KEY AUTOINCREMENT
+    ,COD_CATEGORIA      INTEGER
+    ,DESC_CATEGORIA     TEXT
+    ,ORDEM_CATEGORIA    INTEGER
+    ,TIPO_VISTORIA      TEXT
+);
+
+CREATE TABLE CATEGORIA_AUX_LAUDO(
+     ID_CATEGORIA_AUX    INTEGER PRIMARY KEY AUTOINCREMENT
+    ,CD_CATEGORIA      INTEGER
+    ,ID_TITULO          INTEGER
+    ,ID_SUB_TITULO      INTEGER
+    ,ID_RESPOSTA        INTEGER
+    ,DESCRICAO          TEXT
+    ,CATEGORIA          TEXT
+);
+
+CREATE TABLE CHECK_LIST(
+     ID_CHECK_LIST    INTEGER PRIMARY KEY AUTOINCREMENT
+    ,ID_LAUDO         INTEGER
+    ,CD_LAUDO         INTEGER
+    ,CD_CATEGORIA     INTEGER
+    ,ID_USUARIO       INTEGER
+    ,ID_TITULO        INTEGER
+    ,ID_SUB_TITULO    INTEGER
+    ,ID_RESPOSTA      INTEGER
+    ,DESCRICAO        TEXT
+    ,CATEGORIA        TEXT
+    ,STATUS           TEXT
+);
+
+CREATE TABLE LAUDO(
+    ID_LAUDO                    INTEGER PRIMARY KEY AUTOINCREMENT
+    ,CD_LAUDO                   INTEGER
+    ,NUM_LAUDO                  INTEGER
+    ,ID_LAUDO_ITEM              INTEGER
+    ,CD_USUARIO                 INTEGER
+    ,PLACA                      TEXT
+    ,CIDADE                     TEXT
+    ,UF_PLACA                   TEXT
+    ,CHASSI                     TEXT
+    ,IDENT_MOTOR                TEXT
+    ,IDENT_CAMBIO               TEXT
+    ,IDENT_CARROCERIA           TEXT
+    ,LEILAO                     INTEGER
+    ,COR                        TEXT
+    ,ANO_MODELO                 INTEGER
+    ,ANO_FABRICACAO             INTEGER
+    ,MODELO                     TEXT
+    ,MARCA                      TEXT
+    ,CD_VISTORIADOR             INTEGER
+    ,CD_CLIENTE                 INTEGER
+    ,CREATED_AT                 DATE
+    ,OBSERVACAO                 TEXT
+    ,OBSERVACAO_ADICIONAL       TEXT
+    ,STATUS                     INTEGER
+    ,TIPO_CLIENTE               INTEGER
+    ,NOME_CLIENTE_PARTICULAR    TEXT
+    ,HODOMETRO                  TEXT
+    ,SHOW_HODOMETRO             INTEGER
+    ,CD_CANCELAMENTO            INTEGER
+    ,TIPO_LAUDO                 TEXT
+);
+
+CREATE TABLE USUARIO(
+    ID_USUARIO                  INTEGER PRIMARY KEY AUTOINCREMENT
+    ,NOME_USUARIO               TEXT
+    ,CD_USUARIO                 TEXT
+    ,EMAIL                      TEXT
+    ,CPF                        TEXT
+    ,STATUS                     TEXT
+);
+
+CREATE TABLE CLIENTE (
+    ID_CLIENTE                  INTEGER PRIMARY KEY AUTOINCREMENT
+    ,CD_CLIENTE                 INTEGER
+    ,NOME                       TEXT
+    ,SOBRENOME                  TEXT
+    ,NOMEFANTASIA               TEXT
+    ,RAZAO_SOCIAL               TEXT
+    ,CNPJ                       TEXT
+    ,CEP                        TEXT
+    ,RUA                        TEXT
+    ,NUMERO                     INTEGER
+    ,COMPLEMENTO                TEXT
+    ,BAIRRO                     TEXT
+    ,CIDADE                     TEXT
+    ,ESTADO                     TEXT
+    ,TELEFONEFIXO               TEXT
+    ,TELEFONECELULAR            TEXT
+    ,EMAIL                      TEXT
+    ,STATUS                     INTEGER
+    ,CD_TIPO_CLIENTE            INTEGER
+    ,CD_USUARIO                 INTEGER
+    ,SYNC                       TEXT
+);
+
+CREATE TABLE VISTORIADOR (
+    ID_VISTORIADOR               INTEGER PRIMARY KEY AUTOINCREMENT
+    ,COD_VISTORIADOR             INTEGER
+    ,EMAIL_USUARIO               TEXT
+    ,EMAIL_VISTORIADOR           TEXT
+    ,CPF_VISTORIADOR             TEXT
+    ,NOME_VISTORIADOR            TEXT
+    ,SOBRENOME_VISTORIADOR       TEXT
+    ,STATUS                      TEXT
+    ,COD_USUARIO                 INTEGER
+);
+
+

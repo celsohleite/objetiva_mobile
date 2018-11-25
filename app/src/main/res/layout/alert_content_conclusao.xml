@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linAlertConclusao"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_conclusao_apr"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:textColor="@color/colorObjetivaBranco"
+            android:backgroundTint="@color/colorObjetivaVerde"
+            android:onClick="onClick_aprovado"
+            android:text="@string/alert_btn_aprovado"/>
+
+        <Button
+            android:id="@+id/btn_conclusao_rest"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:onClick="onClick_restricao"
+            android:textColor="@color/colorObjetivaBranco"
+            android:backgroundTint="@color/colorObjetivaAmarelo"
+            android:text="@string/alert_btn_restricao"/>
+
+        <Button
+            android:id="@+id/btn_conclusao_repr"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/colorObjetivaVermelho"
+            android:padding="10dp"
+            android:onClick="onClick_reprovado"
+            android:text="@string/alert_btn_reprovado"
+            android:textColor="@color/colorObjetivaBranco" />
+
+        <Button
+            android:id="@+id/btn_conclusao_cancelar"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/colorBlue"
+            android:padding="10dp"
+            android:onClick="onClick_cancelar"
+            android:text="@string/alert_btn_cancel"
+            android:textColor="@color/colorObjetivaBranco" />
+
+    </LinearLayout>
+
+</LinearLayout>

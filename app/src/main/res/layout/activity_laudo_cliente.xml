@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="zi.objetivamobile.LaudoClienteActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorObjetivaVerde">
+
+                <EditText
+                    android:id="@+id/laudo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:hint="@string/txtv_content_laudo"
+                    android:inputType="textEmailAddress"
+                    android:textSize="25dp"
+                    android:maxLines="1"
+                    android:nextFocusDown="@+id/password"
+                    android:padding="15dp"
+                    android:textAllCaps="true"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHighlight="@color/colorObjetivaTitle"
+                    android:textColorHint="@color/colorObjetivaTitle" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/spn_tipo_cliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/array_contratante"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+
+            <Spinner
+                android:id="@+id/spn_cliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+
+
+            <LinearLayout
+                android:id="@+id/lin_nome_cliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorObjetivaVerde">
+
+                    <EditText
+                        android:id="@+id/cliente"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txtv_content_cliente"
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:nextFocusDown="@+id/password"
+
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHighlight="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/chk_mercosul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chk_content_mercosul"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorObjetivaVerde">
+
+                <!--
+                <br.com.sapereaude.maskedEditText.MaskedEditText
+                    android:id="@+id/placa"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    mask:char_representation="c"
+                    mask:mask="ccc-cccc" />
+                    -->
+
+                <EditText
+                    android:id="@+id/placa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtv_content_placa"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:maxLength="7"
+
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHighlight="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack" />
+                -->
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/spn_uf_placa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/array_uf_placa"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorObjetivaVerde">
+
+                <EditText
+                    android:id="@+id/cidade_veiculo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtv_content_cidade_veiculo"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:nextFocusDown="@+id/password"
+
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHighlight="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorObjetivaVerde">
+
+                <EditText
+                    android:id="@+id/marca_veiculo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtv_content_marca_veiculo"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:nextFocusDown="@+id/password"
+
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHighlight="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorObjetivaVerde">
+
+                <EditText
+                    android:id="@+id/modelo_veiculo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtv_content_modelo_veiculo"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:nextFocusDown="@+id/password"
+
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHighlight="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorObjetivaVerde">
+
+                <EditText
+                    android:id="@+id/chassi_veiculo"
+                    android:layout_gravity="top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtv_content_chassi_veiculo"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:nextFocusDown="@+id/password"
+
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHighlight="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorObjetivaVerde">
+
+                <EditText
+                    android:id="@+id/ident_motor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtv_content_ident_motor"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:nextFocusDown="@+id/password"
+
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHighlight="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorObjetivaVerde">
+
+                <EditText
+                    android:id="@+id/ident_cambio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtv_content_ident_cambio"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:nextFocusDown="@+id/password"
+
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHighlight="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorObjetivaVerde">
+
+                <EditText
+                    android:id="@+id/ident_carroceria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtv_content_ident_carroceria"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:nextFocusDown="@+id/password"
+
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHighlight="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorObjetivaVerde">
+
+                <EditText
+                    android:id="@+id/cor_veiculo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtv_content_cor_veiculo"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:nextFocusDown="@+id/password"
+
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHighlight="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorObjetivaVerde">
+
+                <EditText
+                    android:id="@+id/ano_fabricacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtv_content_ano_fabricacao"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:maxLength="4"
+                    android:nextFocusDown="@+id/password"
+
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHighlight="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorObjetivaVerde">
+
+                <EditText
+                    android:id="@+id/ano_modelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtv_content_ano_modelo"
+                    android:inputType="number"
+                    android:maxLines="1"
+
+                    android:maxLength="4"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHighlight="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorObjetivaVerde">
+
+                <EditText
+                    android:id="@+id/hodometro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtv_content_hodometro"
+                    android:inputType="number"
+                    android:maxLines="1"
+
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHighlight="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<Spinner-->
+                <!--android:id="@+id/spn_leilao"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:entries="@array/array_leilao"-->
+                <!--android:paddingBottom="10dp"-->
+                <!--android:paddingTop="10dp" />-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="15dp">
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtv_content_exibe_imp_hodometro"
+                    android:textColor="@color/colorObjetivaVerde" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:paddingTop="15dp">
+
+                <Button
+                    android:id="@+id/btn_cancelar"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorObjetivaVermelho"
+                    android:onClick="doClick_cancelar"
+                    android:text="@string/btn_cancelar"
+                    android:textColor="@color/colorObjetivaBranco" />
+
+
+                <Button
+                    android:id="@+id/btn_salvar"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorObjetivaVerde"
+                    android:onClick="doClick_save"
+                    android:text="@string/btn_salvar"
+                    android:textColor="@color/colorObjetivaBranco" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

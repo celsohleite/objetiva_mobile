@@ -1,0 +1,184 @@
+<resources>
+
+    <string name="app_name">Objetiva Mobile</string>
+    <string name="app_dados_laudo">Informações do Laudo</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_login">Login</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Usuário</string>
+    <string name="prompt_foto_laudo">Informe o Titulo da Foto</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="error_invalid_email">e-mail inválido.</string>
+    <string name="error_invalid_usuario_inativo">Usuário inativo.</string>
+    <string name="error_invalid_password">Está senha é curta</string>
+    <string name="error_invalid_empty">Informe Usuário e a Senha.</string>
+    <string name="error_incorrect_title">Erro</string>
+    <string name="error_incorrect_password">OPS!  e-mail ou senha não válidos.</string>
+    <string name="error_field_required">informe o e-mail</string>
+
+    <string name="permission_rationale">"Contacts permissions are needed for providing email  completions." </string>
+
+    <string name="title_activity_home">Objetiva Mobile</string>
+    <string name="title_activity_check_list">Checklist</string>
+    <string name="title_activity_laudo_concluido">Laudos Concluidos</string>
+    <string name="title_activity_laudos">Laudos</string>
+
+    <string name="title_agenda">Agenda</string>
+    <string name="title_localizacao">Localizar</string>
+    <string name="title_avisos">Avisos</string>
+    <string name="title_cadastro">Cadastro</string>
+    <string name="title_activity_mapa">Map</string>
+    <string name="title_activity_conta_usuario">ContaUsuarioActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- informações objetiva -->
+    <string name="txt_cadastro_info">Olá! Informe seus dados para que possamos colocarmos você em contato com nossos profissionais. :)</string>
+
+    <string name="txt_cadastro_usuario">Usuário</string>
+    <string name="txt_cadastro_senha">Senha</string>
+    <string name="txt_cadastro_conf_senha">Confirme a Senha</string>
+    <string name="txt_cadastro_email">E-mail</string>
+    <string name="txt_cadastro_conf_email">Confirme o e-mail</string>
+    <string name="txt_cadastro_nome_completo">Nome Completo</string>
+    <string name="txt_cadastro_cpf">CPF</string>
+    <string name="txt_cadastro_data_nascimento">Data de Nascimento</string>
+    <string name="txt_cadastro_cep">CEP</string>
+    <string name="txt_cadastro_endereco">Endereco</string>
+    <string name="txt_cadastro_num">Numero</string>
+    <string name="txt_cadastro_cidade">Cidade</string>
+    <string name="txt_cadastro_estado">Estado</string>
+    <string name="txt_cadastro_fone">Telefone</string>
+    <string name="txt_cadastro_celular">Celular</string>
+
+    <string name="txt_cadastro_acesso">Acesso</string>
+    <string name="txt_cadastro_dados">Dados Pessoais</string>
+
+    <string name="msg_confirma_senha">Confirme sua senha as senhas informadas não são iguais.</string>
+    <string name="msg_confirma_email">Confirme seu e-mail os e-mails informados não são iguais.</string>
+
+    <string name="alert_btn_ok">OK</string>
+
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_salvar">Salvar</string>
+    <string name="btn_proximo">Próximo</string>
+    <string name="btn_ok">OK</string>
+    <string name="title_activity_cadastro">CadastroActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_agenda">AgendaActivity</string>
+    <string name="facebook_app_id">[APP_ID]</string>
+    <string name="fb_login_protocol_scheme">fb[APP_ID]</string>
+    <string name="txt_profissional">Profissional</string>
+    <string name="lbl_profissional">Profissional</string>
+    <string name="lbl_descricao">Detalhes do Profissional</string>
+    <string name="lbl_data">Data : </string>
+    <string name="lbl_hora">Hora : </string>
+    <string name="title_activity_laudo_foto">Fotos do Laudo</string>
+    <string name="title_activity_laudo_delivery">Map</string>
+    <string name="edit_observacao">Observação</string>
+
+    <string name="btn_camera">camera</string>
+    <string name="err_cria_diretorio">Ocorreu erro ao criar o diretorio</string>
+    <string name="title_activity_lista_laudo">Informações Laudo</string>
+    <string name="title_activity_lista_laudo_conclusao">Informe uma Observação.</string>
+
+    <string name="txtv_content_contratante">Contratante</string>
+    <string name="txtv_content_cliente">Cliente</string>
+    <string name="txtv_content_laudo">Laudo</string>
+    <string name="chk_content_mercosul">Placa Mercosul</string>
+    <string name="txtv_content_placa">Placa</string>
+    <string name="txtv_content_uf_placa">UF da Placa</string>
+    <string name="txtv_content_cidade_veiculo">Cidade do Veiculo</string>
+    <string name="txtv_content_marca_veiculo">Marca do Veiculo</string>
+    <string name="txtv_content_modelo_veiculo">Modelo do Veiculo</string>
+    <string name="txtv_content_chassi_veiculo">Chassi do Veiculo</string>
+    <string name="txtv_content_ident_motor">Identificação do Motor</string>
+    <string name="txtv_content_ident_cambio">Identificação do Câmbio</string>
+    <string name="txtv_content_ident_carroceria">Identificação da Carroceria</string>
+    <string name="txtv_content_cor_veiculo">Cor do Veiculo</string>
+    <string name="txtv_content_ano_fabricacao">Ano de Fabricação</string>
+    <string name="txtv_content_ano_modelo">Ano Modelo</string>
+    <string name="txtv_content_hodometro">Hodometro</string>
+    <string name="txtv_content_pesq_leilao">Pesquisa Leilão</string>
+    <string name="txtv_content_exibe_imp_hodometro">Exibir hodometro na impressão?</string>
+
+    <string name="menu_laudo_entrada">Laudos</string>
+    <string name="menu_laudo_saida">Laudos Concluidos</string>
+    <string name="menu_laudo_enviar">Enviar Laudos</string>
+    <string name="menu_laudo_localizacao">Localização</string>
+
+
+    <!-- string array itens -->
+    <string-array name="array_contratante">
+        <item>Tipo de Cliente</item>
+        <item>Empresa</item>
+        <item>Particular</item>
+    </string-array>
+
+    <string-array name="array_uf_placa">
+        <item>UF Placa</item>
+        <item>AC</item>
+        <item>AL</item>
+        <item>AP</item>
+        <item>AM</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MT</item>
+        <item>MS</item>
+        <item>MG</item>
+        <item>PA</item>
+        <item>PB</item>
+        <item>PR</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RS</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>SC</item>
+        <item>SP</item>
+        <item>SE</item>
+        <item>TO</item>
+    </string-array>
+
+    <string-array name="array_leilao">
+        <item>Selecione</item>
+        <item>Sim</item>
+        <item>Não</item>
+    </string-array>
+
+
+    <!-- region menu item-->
+    <string name="txtv_mnu_sincronizar">Sincronizar</string>
+    <string name="txtv_mnu_dados">Obter Dados</string>
+    <string name="txtv_sinc_dados">Sincronizando os dados do Laudo</string>
+    <string name="txtv_sinc_foto">Aguarde enquando as fotos as fotos e os laudos são enviadas.</string>
+    <string name="txtv_mnu_politica_privacidade">Politica de Privacidade</string>
+    <string name="txtv_mnu_sair">Sair</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- mensagem de loading -->
+    <string name="title_loading_recebe_dados">Recebendo informações</string>
+    <string name="title_loading_aguarde_recebe_dados">Aguarde enquanto recebe as informações.</string>
+
+    <string name="title_loading_envia_fotos">Enviando fotos</string>
+    <string name="title_loading_aguarde_envia_dados">Aguarde enquanto é enviado as fotos.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:id="@+id/rdb_grp_identificacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/rdb_laudo_identificacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alert_rdb_title_ident" />
+
+                <RadioButton
+                    android:id="@+id/rdb_placa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onChangeRadioIdentifica"
+                    android:text="@string/alert_rdb_tipo_placa" />
+
+                <RadioButton
+                    android:id="@+id/rdb_chassis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onChangeRadioIdentifica"
+                    android:visibility="gone"
+                    android:text="@string/alert_rdb_tipo_chassis" />
+
+                <RadioButton
+                    android:id="@+id/rdb_motor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onChangeRadioIdentifica"
+                    android:text="@string/alert_rdb_tipo_motor" />
+
+                <RadioButton
+                    android:id="@+id/rdb_cambio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onChangeRadioIdentifica"
+                    android:text="@string/alert_rdb_tipo_cambio" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alert_rdb_title_vistoria" />
+
+                <RadioButton
+                    android:id="@+id/rdb_base"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onChangeRadioPorte"
+                    android:text="@string/alert_rdb_base" />
+
+                <RadioButton
+                    android:id="@+id/rdb_movel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onChangeRadioPorte"
+                    android:text="@string/alert_rdb_movel" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

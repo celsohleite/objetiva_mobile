@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zi.objetivamobile.LaudoFotoActivity">
+
+    <LinearLayout
+        android:layout_gravity="center|center_vertical"
+        android:layout_width="280dp"
+        android:layout_height="100dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:padding="10dp"
+            android:textColorHint="@color/colorObjetivaVerde">
+
+            <AutoCompleteTextView
+                android:id="@+id/edit_foto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_foto_laudo"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColorHighlight="@color/colorObjetivaVerde"
+                android:textColor="@color/colorObjetivaVerde"
+                android:padding="15dp"
+                android:drawableRight="@mipmap/camera_laudo"
+                android:singleLine="true"
+                android:textColorHint="@color/colorObjetivaBranco" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

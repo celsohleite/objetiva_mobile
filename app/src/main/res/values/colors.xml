@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#cf0022</color>
+    <color name="colorPrimaryDark">#cf0022</color>
+    <color name="colorAccent">#00a656</color>
+    <color name="colorObjetivaVerde">#00a656</color>
+    <color name="colorObjetivaVermelho">#cf0022</color>
+    <color name="colorObjetivaAmarelo">#FFFF00</color>
+    <color name="colorObjetivaVermelhoMenu">#d96b6f</color>
+    <color name="colorObjetivaBranco">#fafafa</color>
+    <color name="colorObjetivaBg">#DCEDC8</color>
+    <color name="colorObjetivaRedBg">#FFEBEE</color>
+    <color name="colorObjetivaTitle">#9E9E9E</color>
+    <color name="colorBlack">#00000F</color>
+    <color name="colorBlue">#91b7e4</color>
+</resources>

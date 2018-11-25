@@ -1,0 +1,34 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_dados"
+        android:enabled="true"
+        android:icon="@drawable/ic_database_black_18dp"
+        android:iconTint="?android:attr/textSelectHandle"
+        android:orderInCategory="100"
+        android:title="@string/txtv_mnu_dados"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/politica_privacidade"
+        android:icon="@mipmap/ic_lock"
+        android:title="@string/txtv_mnu_politica_privacidade"
+        android:orderInCategory="100"
+        android:layout_width="35dp"
+        android:layout_height="50dp"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/exit_to_app"
+        android:title="@string/txtv_mnu_sair"
+        android:orderInCategory="100"
+        android:layout_width="35dp"
+        android:layout_height="50dp"
+        app:showAsAction="never"
+        />
+
+</menu>

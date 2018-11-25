@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+
+        <group android:checkableBehavior="single">
+            <!--
+              <item
+                  android:id="@+id/nav_camera"
+                  android:icon="@drawable/ic_menu_camera"
+                  android:title="Import" />
+              <item
+                  android:id="@+id/nav_gallery"
+                  android:icon="@drawable/ic_menu_gallery"
+                  android:title="Gallery" />
+              <item
+                  android:id="@+id/nav_slideshow"
+                  android:icon="@drawable/ic_menu_slideshow"
+                  android:title="Slideshow" />
+              <item
+                  android:id="@+id/nav_manage"
+                  android:icon="@drawable/ic_menu_manage"
+                  android:title="Tools" />
+                  -->
+
+            <item android:title="Segurança">
+                <menu>
+                    <item
+                        android:id="@+id/nav_politica_privacidade"
+                        android:icon="@mipmap/ic_lock"
+                        android:title="Politica de Privacidade" />
+                </menu>
+            </item>
+        </group>
+
+        </android.support.design.widget.NavigationView>
+    </menu>
